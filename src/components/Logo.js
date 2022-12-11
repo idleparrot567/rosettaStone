@@ -2,7 +2,7 @@ import {Text,
     Image,
     useColorModeValue} from '@chakra-ui/react'
 import styled from '@emotion/styled'
-import {Link} from 'react-router-dom'
+import Rosetta from './Rosetta'
 
 const LogoBox = styled.span`
 font-weight: bold;
@@ -24,12 +24,12 @@ const Logo = () => {
     console.log(stoneImg);
     return (
             <LogoBox>
-                <Image src={stoneImg} width={20} height={20} alt='rosetta stone'/> 
+                {/* <Image src={stoneImg} width={20} height={20} alt='rosetta stone'/>  */}
                 <Text
                 color={useColorModeValue('gray.800', 'white')}
-                fontFamily='M PLUS Rounded 1c'
+                fontFamily='M PLUS Rounded 1c,sans-serif'
                 fontWeight='bold'
-                ml={3}> 
+                ml={5}> 
                 RosettaStone
                 </Text>
             </LogoBox>

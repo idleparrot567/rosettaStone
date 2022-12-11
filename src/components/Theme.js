@@ -25,14 +25,15 @@ const components = {
   },
   Link: {
     baseStyle: props => ({
-      color: mode('#3d7aed', '#ff63c3')(props),
-      textUnderlineOffset: 3
+      color: mode('black', 'white')(props),
+      textUnderlineOffset: 2
     })
   }
 }
 
 const fonts = {
-  heading: "'M PLUS Rounded 1c'"
+  heading: "'M PLUS Rounded 1c'",
+  link: `'Open Sans', sans-serif`,
 }
 
 const colors = {
