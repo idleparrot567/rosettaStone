@@ -1,29 +1,37 @@
-import "./App.css";
-import { useState } from "react";
-import bakeryData from "./assets/bakery-data.json";
+import "./index.css";
+// import bakeryData from "./assets/project-data.json";
+import Nav from "./components/Nav"
+import Home from "./components/Home";
+import Projects from "./components/Projects";
+import Blog from "./components/Blog";
+// import {Routes, Route} from 'react-router'
+import {Routes, Route} from 'react-router';
+import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+import theme from './components/Theme.js'
+
 
 /* ####### DO NOT TOUCH -- this makes the image URLs work ####### */
-bakeryData.forEach((item) => {
-  item.image = process.env.PUBLIC_URL + "/" + item.image;
-});
+// bakeryData.forEach((item) => {
+//   item.image = process.env.PUBLIC_URL + "/" + item.image;
+// });
 /* ############################################################## */
+
+
+
 
 function App() {
   // TODO: use useState to create a state variable to hold the state of the cart
   /* add your cart state code here */
-
+ 
   return (
-    <div className="App">
-      <h1>My Bakery</h1> {/* TODO: personalize your bakery (if you want) */}
-
-      {bakeryData.map((item, index) => ( // TODO: map bakeryData to BakeryItem components
-        <p>Bakery Item {index}</p> // replace with BakeryItem component
-      ))}
-
-      <div>
-        <h2>Cart</h2>
-        {/* TODO: render a list of items in the cart */}
-      </div>
+      <div clasname='APP'>
+        <ChakraProvider theme={theme}>
+        <Nav/>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="Projects" element={<Projects/>}/>
+        </Routes>
+        </ChakraProvider>
     </div>
   );
 }

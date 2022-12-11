@@ -4,9 +4,18 @@
   "private": true,
   "homepage": "./",
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.13",
+    "@chakra-ui/react": "^2.4.3",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "framer-motion": "^7.6.19",
+    "hash-router": "^0.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
+    "react-router": "^6.4.5",
+    "react-router-dom": "^6.4.5",
+    "react-scripts": "5.0.1",
+    "three": "^0.147.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-plugin-react-hooks": "^4.6.0"
   }
 }
