@@ -7,14 +7,14 @@ const Home = () => {
     return (
       <div>
      <div id="model">
-      <Container maxWidth="sm" centerContent>
+      <Container maxWidth="2xl" centerContent>
       <div id='goHere'>
         <Model></Model>
       </div>  
       </Container>
       </div>
        <div>
-       <Container maxWidth="container.sm" centerContent>
+       <Container maxWidth="5xl" centerContent>
        <Main></Main> 
          </Container> 
      </div>

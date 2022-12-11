@@ -12,6 +12,7 @@ export default function LittlestTokyo() {
     useEffect(() => {
         const test = new SceneInit('canvas'); //'myThreeJsCanvas'
         test.initialize();
+        test. onWindowResize();
         test.animate();
         //container
         const {current: container} = refContainer
@@ -28,7 +29,7 @@ export default function LittlestTokyo() {
         gltfLoader.setDRACOLoader( dracoLoader );
         gltfLoader.load(process.env.PUBLIC_URL + '/scene.gltf', (gltfScene) => {
             const model = gltfScene.scene;
-            model.position.set( 0, 1, 0 );
+            model.position.set( 1, 1, 0 );
 			model.scale.set( 0.01, 0.01, 0.01);
             test.scene.add(gltfScene.scene);
             //mixer

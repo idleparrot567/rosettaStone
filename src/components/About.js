@@ -21,19 +21,20 @@ export default function About() {
         <Container>
           <Box overflow='hidden' 
           borderRadius='6px' 
-          bg={useColorModeValue('#85C7DE', '#C6DBF0')}
+          bg={useColorModeValue('#85C7DE', '#2E3B55')}
           p={3} 
           mb={6} 
-          align='center'>
-            <Text color='white'>Hello, I&apos;m a CS and Medieval Studies Undergrad @ Brown. </Text>
+          align='center'
+          css={{ backdropFilter: 'blur(10px)' }}>
+            Hello, I&apos;m a CS and Medieval Studies Undergrad @ Brown.
           </Box>
           <Section delay={0.1}>
           <Box display={{md:'flex'}}>
             <Box flexGrow={1}>
-              <Heading as='h2' variant='page-title' color='white'>
+              <Heading as='h1' variant='page-title'>
               RosettaStone
               </Heading>
-              <Text color='white'>
+              <Text>
               Student of Digital Craftsmanship (Musician / Developer / Medievalist)
               </Text>
             </Box>
@@ -50,7 +51,7 @@ export default function About() {
           
           {/* here starts the work section */}
           <Section delay={0.2}>
-          <Heading as='h3' variant='underline' color="white">
+          <Heading as='h3' variant='section-title'>
             Work
           </Heading>
           <Paragraph> RosettaStone is a junior undergrad @ Brown studying CS (AI/ML and Data tracks) and Medieval 
@@ -65,21 +66,21 @@ export default function About() {
 
            {/* here starts the Bio section */}
            <Section delay={0.3}>
-             <Heading as="h3" variant="underline" color="white"> 
+             <Heading as="h3" variant="section-title" > 
              Bio
              </Heading>
              <BioSection>
               <BioYear> 2017 to 2020 </BioYear>
-               Studying @ Tabor Academy, Marion, MA, USA. 
+               Studying @ Tabor Academy, Marion, MA. 
              </BioSection>
              <BioSection>
                <BioYear> 2020 to present </BioYear>
-               Studying @ Brown University, Providence, RI, USA.
+               Studying @ Brown University, Providence, RI.
              </BioSection>
            </Section>
             {/*Here starts the interest section  */}
           <Section delay={0.5}>
-          <Heading as='h3' variant='underline' color="white">
+          <Heading as='h3' variant='section-title'>
             Interests
           </Heading>
           <Paragraph> Classical Violin, Late Antiquity Greek/ Latin, Medieval Art History.

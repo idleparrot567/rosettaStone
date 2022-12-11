@@ -23,7 +23,6 @@ const Logo = () => {
     const stoneImg = process.env.PUBLIC_URL +'/rosetta.svg';
     console.log(stoneImg);
     return (
-        <Link to="/">
             <LogoBox>
                 <Image src={stoneImg} width={20} height={20} alt='rosetta stone'/> 
                 <Text
@@ -34,7 +33,6 @@ const Logo = () => {
                 RosettaStone
                 </Text>
             </LogoBox>
-        </Link>
     )
 }
 

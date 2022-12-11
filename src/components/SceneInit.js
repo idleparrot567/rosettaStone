@@ -28,10 +28,12 @@ export default class SceneInit {
 
   initialize() {
     this.scene = new THREE.Scene();
+    const container = document.getElementById('test');
     // this.scene.background = new THREE.Color(0xffffff);
     this.camera = new THREE.PerspectiveCamera(
       this.fov,
-      window.innerWidth / window.innerHeight,
+      // window.innerWidth / window.innerHeight,
+      container.clientWidth / container.clientHeight,
       1,
       100
     );
@@ -43,8 +45,8 @@ export default class SceneInit {
       canvas, antialias: true,
     });
     //build the container here
-    const container = document.getElementById('test');
-    this.renderer.setPixelRatio( window.devicePixelRatio);
+   
+    this.renderer.setPixelRatio( container.devicePixelRatio);
     console.log("container.weith", container.clientWidth)
     this.renderer.setSize(container.clientWidth, container.clientHeight);
     this.renderer.setClearColor( 0xffffff, 0);
@@ -71,8 +73,6 @@ export default class SceneInit {
   }
 
   animate() {
-    // NOTE: Window is implied.
-    // requestAnimationFrame(this.animate.bind(this));
     window.requestAnimationFrame(this.animate.bind(this));
     this.render();
     this.stats.update();
