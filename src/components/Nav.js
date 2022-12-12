@@ -26,8 +26,6 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
         style={{ textDecoration: 'none' }}
         to={'/' + children}
         p={2}
-        // bg={active ? 'grassTeal' : undefined}
-        // color={active ? '#202023' : inactiveColor}
         target={target}
         {...props}
       >
@@ -74,7 +72,7 @@ const Navbar = props => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem children="Projects" path={path}>
-            Works
+            Portfolio
           </LinkItem>
           <LinkItem children="Blog" path={path}>
             Posts
@@ -93,9 +91,12 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <reLink to="/">
-                  <MenuItem as={Link}>About</MenuItem>
-                </reLink>
+                <Link as={reLink} to='Home'style={{ textDecoration: 'none' }}>
+                <MenuItem as={Link}>About</MenuItem>
+                </Link>
+                <Link as={reLink} to='Projects'style={{ textDecoration: 'none' }}>
+                <MenuItem as={Link}>Portfolio</MenuItem>
+                </Link>
               </MenuList>
             </Menu>
           </Box>
