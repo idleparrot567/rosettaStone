@@ -72,7 +72,7 @@ const Navbar = props => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem children="Projects" path={path}>
-            Portfolio
+            Projects
           </LinkItem>
           <LinkItem children="Blog" path={path}>
             Posts
@@ -95,7 +95,7 @@ const Navbar = props => {
                 <MenuItem as={Link}>About</MenuItem>
                 </Link>
                 <Link as={reLink} to='Projects'style={{ textDecoration: 'none' }}>
-                <MenuItem as={Link}>Portfolio</MenuItem>
+                <MenuItem as={Link}>Projects</MenuItem>
                 </Link>
               </MenuList>
             </Menu>

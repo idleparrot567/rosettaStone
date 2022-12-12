@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
-import Head from 'next/head'
-import { GridItemStyle } from '../grid-item'
+import { GridItemStyle } from './GridItem'
+import {Helmet} from 'react-helmet';
 
 const variants = {
   hidden: { opacity: 0, x: 0, y: 20 },
@@ -21,11 +21,11 @@ const Layout = ({ children, title }) => {
     >
       <>
         {title && (
-          <Head>
+          <Helmet>
             <title>{t}</title>
             <meta name="twitter:title" content={t} />
             <meta property="og:title" content={t} />
-          </Head>
+          </Helmet>
         )}
         {children}
 

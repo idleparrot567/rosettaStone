@@ -1,5 +1,5 @@
 import {Link as ReactLink} from 'react-router-dom'
-import Image from 'next/image'
+import ReactImage from './ReactImage'
 import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 import React from 'react'
@@ -7,7 +7,7 @@ import React from 'react'
 export const GridItem = ({ children, href, title, thumbnail }) => (
   <Box w="100%" textAlign="center">
     <LinkBox cursor="pointer">
-      <Image
+      <ReactImage
         src={thumbnail}
         alt={title}
         className="grid-item-thumbnail"
@@ -26,7 +26,7 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
   <Box w="100%" textAlign="center">
     <ReactLink to={`/works/${id}`} scroll={false}>
       <LinkBox cursor="pointer">
-        <Image
+        <ReactImage
           src={thumbnail}
           alt={title}
           className="grid-item-thumbnail"
