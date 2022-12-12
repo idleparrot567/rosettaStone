@@ -3,6 +3,7 @@ import "./index.css";
 import Nav from "./components/Nav"
 import Home from "./components/Home";
 import Projects from "./components/Projects";
+import iterativeDesign from './projects/iterativeDesign'
 import Blog from "./components/Blog";
 // import {Routes, Route} from 'react-router'
 import {Routes, Route} from 'react-router';
