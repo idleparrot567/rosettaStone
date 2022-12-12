@@ -12,41 +12,38 @@ const Projects = () => {
   return (
     <Layout title="Works">
       <Container>
-        <Heading as='h3' fontSize={30} mb={4}>
-          Works
+        <Heading as='h3' fontSize={25} variant={"section-title"} mb={4}>
+          UIUX 
         </Heading>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={process.env.PUBLIC_URL + "/ProjectsThumbs/persona.jpg"}>
-            A Markdown note-taking app with 100+ plugins, cross-platform and
-            encrypted data sync support
+          <WorkGridItem id="persona" title="User Persona" thumbnail={process.env.PUBLIC_URL + "/ProjectsThumbs/persona.jpg"}>
+            Constructed 3 user persona and sketch for the card reader @ Brown
           </WorkGridItem>
         </Section>
         <Section>
           <WorkGridItem
-            id="walknote"
-            title="walknote"
+            id="iterativeDesign"
+            title="Iterative Design"
             thumbnail={process.env.PUBLIC_URL + "/ProjectsThumbs/persona.jpg"}
           >
-            Music recommendation app for iOS
+           Figma redesigb of Pivo, an financial service app for freight carriers. 
           </WorkGridItem>
         </Section>
 
         <Section delay={0.1}>
           <WorkGridItem
-            id="fourpainters"
-            title="The four painters"
+            id="shoopingCart"
+            title="React Shopping Cart"
             thumbnail={process.env.PUBLIC_URL + "/ProjectsThumbs/persona.jpg"}
           >
-            A video work generated with deep learning, imitating famous four
-            painters like Van Gogh
+            A simple react app featuring a bakery shopping cart system
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
-          <WorkGridItem id="menkiki" thumbnail={process.env.PUBLIC_URL + "/ProjectsThumbs/persona.jpg"} title="Menkiki">
-            An app that suggests ramen(noodle) shops thumbPersonabased on a given photo of
-            the ramen you want to eat
+          <WorkGridItem id="responsive" thumbnail={process.env.PUBLIC_URL + "/ProjectsThumbs/persona.jpg"} title="Responsive Redesign">
+            Implemented a HTML responsiive website for Fitzgerald Family Rabbitry
           </WorkGridItem>
         </Section>
       </SimpleGrid>
