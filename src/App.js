@@ -4,6 +4,7 @@ import Nav from "./components/Nav"
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Blog from "./components/Blog";
+import iterativeDesign from "./projects/iterativeDesign";
 import {Routes, Route} from 'react-router';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import theme from './components/Theme.js'
@@ -30,6 +31,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="Home" element={<Home/>}/>
           <Route path="Projects" element={<Projects/>}/>
+          <Route path="iterativeDesign" element={iterativeDesign}/>
         </Routes>
         </ChakraProvider>
     </div>
