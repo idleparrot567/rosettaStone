@@ -47,7 +47,6 @@ export default class SceneInit {
     //build the container here
    
     this.renderer.setPixelRatio( container.devicePixelRatio);
-    console.log("container.weith", container.clientWidth)
     this.renderer.setSize(container.clientWidth, container.clientHeight);
     this.renderer.setClearColor( 0xffffff, 0);
     this.renderer.outputEncoding = THREE.sRGBEncoding;
@@ -86,8 +85,6 @@ export default class SceneInit {
   }
 
   onWindowResize() {
-    console.log("TEST clientwidth",test.clientWidth);
-    console.log("TEST clientHeight",test.clientHeight);
     this.camera.aspect = test.clientWidth / test.clientHeight;
     //this.camera.aspect = window.innerWidth / window.innerHeight;
     //this.camera.aspect = this.canvas.clientWidth / this.canvas.clientHeight;

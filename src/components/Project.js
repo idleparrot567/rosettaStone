@@ -1,9 +1,13 @@
 import React from 'react'
-import {Box, Text, LinkBox, LinkOverlay} from '@chakra-ui/react'
+import {Box, Text, Link, LinkBox, LinkOverlay} from '@chakra-ui/react'
 import {Global} from '@emotion/react'
+import {Link as ReactLink} from 'react-router-dom'
 
-export default function Project() {
-  return (
-    <div>Project</div>
-  )
-}
+export const Title = ({children}) => (
+  <Box>
+    <Link></Link>
+
+
+  </Box>
+
+)

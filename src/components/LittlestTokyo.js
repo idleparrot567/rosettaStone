@@ -31,7 +31,6 @@ export default function LittlestTokyo() {
             const model = gltfScene.scene;
             model.position.set( 1, 1, 0 );
 			model.scale.set( 0.01, 0.01, 0.01);
-            console.log(test.scene);
             test.scene.add(gltfScene.scene);
             //mixer
             mixer = new THREE.AnimationMixer(gltfScene.scene);

@@ -3,7 +3,6 @@ import "./index.css";
 import Nav from "./components/Nav"
 import Home from "./components/Home";
 import Projects from "./components/Projects";
-import Blog from "./components/Blog";
 import IterativeDesign from "./projects/IterativeDesign";
 import {Routes, Route} from 'react-router';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
