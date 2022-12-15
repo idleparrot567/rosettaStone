@@ -55,7 +55,9 @@ export default function About() {
             Work
           </Heading>
           <Paragraph> RosettaStone is a junior undergrad @ Brown studying CS (AI/ML and Data tracks) and Medieval 
-            Studies (Late Antiquity Track). 
+            Studies (Late Antiquity Track). Rosetta's interests mainly lies in Artificial Intelligence and their applications
+            in the finance world. Rosetta's study includes natural language processing and machine learning, and they are currently picking up 
+            UIUX design as a student of Brown's UIUX class. 
           </Paragraph>
           <Box align="center" my={4}>
             <Button rightIcon={<ChevronRightIcon/>} colorScheme="teal"> 

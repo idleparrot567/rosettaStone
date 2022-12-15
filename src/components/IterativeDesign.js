@@ -16,6 +16,7 @@ import Layout from './Article';
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import {Title, WorkImage, Meta} from './Project'
 import Paragraph from './Paragraph.js'
+import Section from './Section.js'
 
 
  const IterativeDesign = () => (
@@ -27,7 +28,7 @@ import Paragraph from './Paragraph.js'
 
     <Image borderRadius="lg" w="full" src={process.env.PUBLIC_URL + "/projectImages/figma_cover.png"} alt={""} mb={4} />
 
-
+    <Section delay={0.1}>
     <Heading as='h5' variant='section-title'>
             Context
     </Heading>
@@ -40,7 +41,6 @@ import Paragraph from './Paragraph.js'
     </Link>
     , a start up company serves to provide cash flow tracker for African freight carriers. 
     </Paragraph>
-
     <List ml={4} my={4}>
       <ListItem>
         <Meta>Platform</Meta>
@@ -53,8 +53,10 @@ import Paragraph from './Paragraph.js'
     </List>
 
     <Image borderRadius="lg" w="full" src={process.env.PUBLIC_URL + "/projectImages/Pivo.png"} alt={""} mb={4} />
-
-    <Heading as='h5' variant='section-title'>
+    </Section>
+  
+  <Section delay={0.2}>
+  <Heading as='h5' variant='section-title'>
             Problem
     </Heading>
 
@@ -79,36 +81,73 @@ import Paragraph from './Paragraph.js'
     <Center>
     <Image borderRadius="lg" w="sm" src={process.env.PUBLIC_URL + "/projectImages/SSKY-TheProblem-Illustration.png"} alt={"problem"} mb={3} />
     </Center>
+  </Section>
 
-    <Heading as='h5' variant='section-title'>
+
+  <Section delay={0.3}>
+  <Heading as='h5' variant='section-title'>
             Process
     </Heading>
     <Paragraph>
-      Working with my team of people, we broke the project down to four key phases,
+      Working with my team, we broke the project down to four key phases,
       each comprised of important steps. This helps planning out the project roadmap and
       determine key milestones and deliberable dates. 
     </Paragraph>
     <Center>
     <Image borderRadius="lg" w="full" src={process.env.PUBLIC_URL + "/projectImages/04.svg"} alt={"problem"} mb={3} />
     </Center>
+  </Section>
 
-    <Heading as='h5' variant='section-title'>
+  <Section delay={0.4}>
+  <Heading as='h5' variant='section-title'>
           Low Fidelity Wireframes
     </Heading>
     <Paragraph>
-      
+    We digitized sketches and created low fidelity wireframes to work out the information architecture of each page.
+    </Paragraph>
+    <List ml={4} my={4}>
+      <ListItem>
+        <Meta>Sketching</Meta>
+        <span>On pen and paper</span>
+      </ListItem>
+      <ListItem>
+        <Meta>Low Fi</Meta>
+        <span> Balsamiq</span>
+      </ListItem>
+    </List>
+    <Image borderRadius="lg" w="full" src={process.env.PUBLIC_URL + "/projectImages/lowfi_ti.svg"} alt={"lowfi wirefram"} mb={3} />
+    <Image borderRadius="lg" w="full" src={process.env.PUBLIC_URL + "/projectImages/wf-final.png"} alt={"lowfi wirefram"} mb={3} />
+  </Section>
+
+  <Section delay={0.4}>
+  <Heading as='h5' variant='section-title'>
+          High Fidelity Wireframes
+    </Heading>
+    <Paragraph>
+    We added fidelity to wireframes with imagery and colors/textures. Throughout the process, we collaborated with the students of the class to review concepts, and continued to iterate until pages felt right. 
+    </Paragraph>
+    <Image borderRadius="lg" w="full" src={process.env.PUBLIC_URL + "/projectImages/high-fi.png"} alt={"lowfi wirefram"} mb={5} />
+  </Section>
+
+  <Section delay={0.5}>
+    <Heading as='h5' variant='section-title'>
+      Testing
+    </Heading>
+    <Paragraph>
+      We then uses the user testing website {' '}
+     <Link href='https://www.usertesting.com/' isExternal>
+      UserTesting.com <ExternalLinkIcon mx='2px' />
+    </Link>
+    to collect three users' responses to our prototype. We designed three small tasks for them to complete,
+    and assess. Based on their feedback, we further improved our prototype. 
     </Paragraph>
 
 
-    <Heading as='h5' variant='section-title'>
-          High Fidelity Wireframes
-    </Heading>
-
-
-    <Heading as='h5' variant='section-title'>
-          User Testing
-    </Heading>
+  </Section>
     
+    <Heading as='h5' variant='section-title'>
+          Result
+    </Heading>
 
 
     {/* <Heading as="h4" fontSize={16} my={6}>
