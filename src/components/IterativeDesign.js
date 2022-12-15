@@ -58,7 +58,7 @@ import Iframe from 'react-iframe'
       </ListItem>
       <ListItem>
         <Meta>Stack</Meta>
-        <span> Figma </span>
+        <span> Figma, Balsamiq </span>
       </ListItem>
     </List>
 
@@ -136,6 +136,12 @@ import Iframe from 'react-iframe'
     <Paragraph>
     We added fidelity to wireframes with imagery and colors/textures. Throughout the process, we collaborated with the students of the class to review concepts, and continued to iterate until pages felt right. 
     </Paragraph>
+    <List ml={4} my={4}>
+      <ListItem>
+        <Meta>High Fi</Meta>
+        <span>Figma</span>
+      </ListItem>
+    </List>
     <Image borderRadius="lg" w="full" src={process.env.PUBLIC_URL + "/projectImages/high-fi.png"} alt={"lowfi wirefram"} mb={5} />
   </Section>
 
@@ -194,12 +200,19 @@ import Iframe from 'react-iframe'
   <Heading as='h5' variant='section-title'>
           Result
   </Heading>
-  <Container>
+  
   {/* <Iframe style={{height: "450px"}} url="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FtjSFu8N1P7QWrytP41laFO%2FIterative-Design%253A-Pivo%3Fnode-id%3D10%253A2817%26t%3DkE8KJt4MCzVbbvN5-1" allowFullScreen></Iframe> */}
   <Paragraph>
     The final prototype incorporates all of the suggestions that we received from fellow student critiques and addresses
-    the problems that the testing users encountered. 
+    the problems that the testing users encountered. Feel free to interact with the embedded Figma model at the bottom of the page.
   </Paragraph>
+  <List ml={4} my={4}>
+      <ListItem>
+        <Meta>Key Take Away</Meta>
+        <span>Designing a product with good UX requires iterative testing and redesigning</span>
+      </ListItem>
+    </List>
+  <Center>
   <Iframe url="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FtjSFu8N1P7QWrytP41laFO%2FIterative-Design%253A-Pivo%3Fpage-id%3D0%253A1%26node-id%3D1%253A215%26viewport%3D1748%252C3655%252C0.5%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A215"
         width="640px"
         height="640px"
@@ -207,36 +220,9 @@ import Iframe from 'react-iframe'
         className=""
         display="block"
         position="relative"/>
-  </Container>
+  </Center>
+
   </Section>
-
-    
-   
-
-
-    {/* <Heading as="h4" fontSize={16} my={6}>
-      <Center>Media coverage</Center>
-    </Heading> */}
-
-    {/* <UnorderedList my={4}>
-      <ListItem>
-        <Link href="http://www.donpy.net/standard-entry/app-reiview/4303.html">
-          <Badge mr={2}>覚醒する @CDiP</Badge>
-          Webアプリ版twitterクライアントの「pichu*pichu」が凄い。{' '}
-          <ExternalLinkIcon mx="2px" />
-        </Link>
-      </ListItem>
-
-      <ListItem>
-        <Link href="http://labs.laurahouse.net/articles/iphone/1115.html">
-          <Badge mr={2}>LauraHouse Labs</Badge>
-          知っておきたいWebアプリ版Twitterクライアント活用法{' '}
-          <ExternalLinkIcon mx="2px" />
-        </Link>
-      </ListItem>
-    </UnorderedList> */}
-    {/* <WorkImage src="/images/works/pichu2_eyecatch.png" alt="Pichu*Pichu" />
-    <WorkImage src="/images/works/pichu2_01.png" alt="Pichu*Pichu" /> */}
   </Container>
 </Layout>
  )

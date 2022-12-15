@@ -10,13 +10,13 @@ const Projects = () => {
   return (
     <Layout title="Works">
       <Container>
-        <Heading as='h3' fontSize={25} variant={"section-title"} mb={4}>
+        {/* <Heading as='h3' fontSize={25} variant={"section-title"} mb={4}>
           UIUX 
-        </Heading>
+        </Heading> */}
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="persona" title="User Persona" thumbnail={process.env.PUBLIC_URL + "/ProjectsThumbs/persona.jpg"}>
+          <WorkGridItem id="persona" title="User Persona" thumbnail={process.env.PUBLIC_URL + "/ProjectsThumbs/persona1.svg"}>
             Constructed 3 user persona and sketch for the card reader @ Brown
           </WorkGridItem>
         </Section>
@@ -24,7 +24,7 @@ const Projects = () => {
           <WorkGridItem
             id="iterativeDesign"
             title="Iterative Design"
-            thumbnail={process.env.PUBLIC_URL + "/ProjectsThumbs/persona.jpg"}
+            thumbnail={process.env.PUBLIC_URL + "/ProjectsThumbs/pivo.svg"}
           >
            Figma redesigb of Pivo, an financial service app for freight carriers. 
           </WorkGridItem>

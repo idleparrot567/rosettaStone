@@ -23,7 +23,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
 )
 
 export const WorkGridItem = ({ children, id, title, thumbnail }) => (
-  <Box w="100%" textAlign="center">
+  <Box textAlign="center" maxW='sm'>
     <ReactLink to={`/${id}`} scroll="false">
       <LinkBox cursor="pointer">
         <ReactImage
