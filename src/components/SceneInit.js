@@ -46,7 +46,7 @@ export default class SceneInit {
     });
     //build the container here
    
-    this.renderer.setPixelRatio( container.devicePixelRatio);
+    this.renderer.setPixelRatio( window.devicePixelRatio);
     this.renderer.setSize(container.clientWidth, container.clientHeight);
     this.renderer.setClearColor( 0xffffff, 0);
     this.renderer.outputEncoding = THREE.sRGBEncoding;

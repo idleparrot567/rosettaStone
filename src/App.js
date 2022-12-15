@@ -28,12 +28,12 @@ function App() {
         <ChakraProvider theme={theme}>
         <Nav/>
           <div id="model">
-          <Container maxWidth="2xl" centerContent>
-            <div id='goHere'>
-            <Model></Model>
-            </div>  
-          </Container>
-        </div>
+            <Container maxWidth="2xl" centerContent>
+              <div id='goHere'>
+              <Model></Model>
+              </div>  
+            </Container>
+          </div>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="Home" element={<Home/>}/>
