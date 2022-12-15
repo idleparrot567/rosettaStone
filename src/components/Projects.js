@@ -24,7 +24,7 @@ const Projects = () => {
           <WorkGridItem
             id="iterativeDesign"
             title="Iterative Design"
-            thumbnail={process.env.PUBLIC_URL + "/ProjectsThumbs/pivo.svg"}
+            thumbnail={process.env.PUBLIC_URL + "/ProjectsThumbs/Layout.png"}
           >
            Figma redesigb of Pivo, an financial service app for freight carriers. 
           </WorkGridItem>
