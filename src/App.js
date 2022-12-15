@@ -5,8 +5,9 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import IterativeDesign from "./components/IterativeDesign.js";
 import {Routes, Route} from 'react-router';
-import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+import { ChakraProvider, extendTheme, Container} from '@chakra-ui/react'
 import theme from './components/Theme.js'
+import Model from "./components/Model.js"
 
 
 /* ####### DO NOT TOUCH -- this makes the image URLs work ####### */
@@ -26,6 +27,13 @@ function App() {
       <div clasname='APP'>
         <ChakraProvider theme={theme}>
         <Nav/>
+          <div id="model">
+          <Container maxWidth="2xl" centerContent>
+            <div id='goHere'>
+            <Model></Model>
+            </div>  
+          </Container>
+        </div>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="Home" element={<Home/>}/>

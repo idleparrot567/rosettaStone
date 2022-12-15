@@ -6,8 +6,6 @@ import { WorkGridItem } from './GridItem'
 
 
 
-
-  
 const Projects = () => {
   return (
     <Layout title="Works">

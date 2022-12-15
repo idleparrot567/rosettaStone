@@ -25,8 +25,8 @@ body {
 }
 
 #test {
-  width: 800px; /*400px*/
-  height: 600px; /*500px*/
+  width: 600px; /*400px*/
+  height: 500px; /*500px*/
   position: static; /* fixed or static */
   justify-content: center;
   top: 100px;
