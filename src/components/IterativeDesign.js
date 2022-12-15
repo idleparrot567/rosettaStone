@@ -88,16 +88,16 @@ import Paragraph from './Paragraph.js'
       each comprised of important steps. This helps planning out the project roadmap and
       determine key milestones and deliberable dates. 
     </Paragraph>
-    <Box bg={useColorModeValue('#85C7DE', '#2E3B55')} w='100%' p={4} color='white'>
-    This is the Box
-    </Box>
-    <Box bg='white' w='100%' p={4} color='white'>
-    This is the Box
-    </Box>
+    <Center>
+    <Image borderRadius="lg" w="full" src={process.env.PUBLIC_URL + "/projectImages/04.svg"} alt={"problem"} mb={3} />
+    </Center>
 
     <Heading as='h5' variant='section-title'>
           Low Fidelity Wireframes
     </Heading>
+    <Paragraph>
+      
+    </Paragraph>
 
 
     <Heading as='h5' variant='section-title'>
