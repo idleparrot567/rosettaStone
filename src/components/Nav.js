@@ -18,7 +18,7 @@ import ThemeToggleButton from './theme-toggle-button'
 import Logo from './Logo'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
-  const active = path === href
+  // const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   return (
       <Link
@@ -54,6 +54,7 @@ const Navbar = props => {
         wrap="wrap"
         align="center"
         justify="space-between"
+        zIndex="dropdown"
       >
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
@@ -79,11 +80,10 @@ const Navbar = props => {
           </LinkItem>
         </Stack>
 
-        <Box flex={1} align="right">
+        <Box flex={1} align="right" position="relative">
           <ThemeToggleButton />
-
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-            <Menu isLazy id="navbar-menu">
+            <Menu isLazy id="navbar-menu" position='absolute'>
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
@@ -91,16 +91,17 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <Link as={reLink} to='Home'style={{ textDecoration: 'none' }}>
-                <MenuItem as={Link}>About</MenuItem>
-                </Link>
-                <Link as={reLink} to='Projects'style={{ textDecoration: 'none' }}>
-                <MenuItem as={Link}>Projects</MenuItem>
-                </Link>
+                {/* <Link as={reLink} to='Home'style={{ textDecoration: 'none' }}> */}
+                <MenuItem as={reLink} to='Home'style={{ textDecoration: 'none' }}>About</MenuItem>
+                {/* </Link> */}
+                {/* <Link as={reLink} to='Projects'style={{ textDecoration: 'none' }}> */}
+                <MenuItem as={reLink} to='Projects'style={{ textDecoration: 'none' }}>Projects</MenuItem>
+                {/* </Link> */}
               </MenuList>
             </Menu>
           </Box>
         </Box>
+
       </Container>
     </Box>
   )
