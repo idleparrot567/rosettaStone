@@ -1,5 +1,5 @@
 import React from 'react'
- const iterativeDesign = () => {
+ const IterativeDesign = () => {
    return (
      <div> 
        iterative Design
@@ -7,4 +7,4 @@ import React from 'react'
    );
  };
 
- export default iterativeDesign;
+ export default IterativeDesign;
