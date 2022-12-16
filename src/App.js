@@ -11,6 +11,7 @@ import ResponsiveRedesign from "./components/ReponsiveRedesign";
 import Persona from "./components/Persona";
 import theme from './components/Theme.js'
 import Model from "./components/Model.js"
+import Blog from "./components/Blog.js"
 
 
 /* ####### DO NOT TOUCH -- this makes the image URLs work ####### */
@@ -45,6 +46,7 @@ function App() {
           <Route path="shoppingCart" element={<ShoppingCart/>}/>
           <Route path="responsiveRedesign" element={<ResponsiveRedesign/>}/>
           <Route path="persona" element={<Persona/>}/>
+          <Route path="Blog" element={<Blog/>}/>
         </Routes>
         </ChakraProvider>
     </div>
