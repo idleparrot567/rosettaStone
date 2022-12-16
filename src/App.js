@@ -7,6 +7,7 @@ import IterativeDesign from "./components/IterativeDesign.js";
 import ShoppingCart from "./components/ShoppingCart.js";
 import {Routes, Route} from 'react-router';
 import { ChakraProvider, extendTheme, Container} from '@chakra-ui/react'
+import ResponsiveRedesign from "./components/ReponsiveRedesign";
 import theme from './components/Theme.js'
 import Model from "./components/Model.js"
 
@@ -41,6 +42,7 @@ function App() {
           <Route path="Projects" element={<Projects/>}/>
           <Route path="IterativeDesign" element={<IterativeDesign/>}/>
           <Route path="shoppingCart" element={<ShoppingCart/>}/>
+          <Route path="responsiveRedesign" element={<ResponsiveRedesign/>}/>
         </Routes>
         </ChakraProvider>
     </div>
