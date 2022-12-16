@@ -6,20 +6,9 @@ import {
   ListItem,
   Link,
   Image,
-  Box,
-  UnorderedList,
   Heading,
   Center,
-  useColorModeValue,
-  Table,
-  Thead,
-  Tbody,
-  Tfoot,
-  Tr,
-  Th,
-  Td,
-  TableCaption,
-  TableContainer,
+  Text
 } from '@chakra-ui/react'
 import Layout from './Article';
 import { ExternalLinkIcon } from '@chakra-ui/icons'
@@ -36,6 +25,10 @@ const ShoppingCart = () => {
         React Shopping Cart <Badge colorScheme='red'>2022</Badge>
       </Title>
 
+      <Center>
+        <Image borderRadius="lg" w="full" src={process.env.PUBLIC_URL + "/projectImages/cover.png"} alt={""} mb={4} />
+      </Center>
+      <Text fontSize='sm' color='gray'>Credit of Pastries Icons to the UIUX TAs</Text>
       <Section delay={0.1}>
       <Heading as='h3' variant='section-title'>Context</Heading>
       <Paragraph>
@@ -90,7 +83,18 @@ const ShoppingCart = () => {
       will trigger changes in the state variables "cartItems" that sets the name of items/price/number 
       of items in the cart through the handler functions onAdd and onRemove.
       </Paragraph>
-
+      <List ml={4} my={4}>
+        <ListItem>
+          <Meta>Possible Improvement</Meta>
+          <span> 
+            Give notification to the users when they have cleared all of the specified
+            item from the cart.  
+          </span>
+        </ListItem>
+      </List>
+      <Center>
+        <Image borderRadius="lg" w="full" src={process.env.PUBLIC_URL + "/projectImages/aggregator.gif"} alt={""} mb={4} />
+      </Center>
       </Section>
 
       <Section delay={0.4}>
@@ -99,6 +103,9 @@ const ShoppingCart = () => {
       When you click any of the button in the filter or sorter's drop down menu,
       changes in the single state variable "State" that sets the items exhibited in Main through handler functions setProducts and filterProducts.
       </Paragraph>
+      <Center>
+        <Image borderRadius="lg" w="full" src={process.env.PUBLIC_URL + "/projectImages/filterSorter.gif"} alt={""} mb={4} />
+      </Center>
       </Section>
 
       <Section delay={0.6}>
@@ -111,7 +118,7 @@ const ShoppingCart = () => {
         <ListItem>
           <Meta>Future Improvement</Meta>
           <span> 
-            Change the placement of sorter, filter. 
+            Change the placement of sorter, filter near the bakery shop's title. 
           </span>
         </ListItem>
       </List>
