@@ -81,6 +81,7 @@ export default class SceneInit {
   render() {
     // NOTE: Update uniform data on each render.
     // this.uniforms.u_time.value += this.clock.getDelta();
+    this.onWindowResize();
     this.renderer.render(this.scene, this.camera);
   }
 
