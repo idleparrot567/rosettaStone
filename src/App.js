@@ -30,13 +30,13 @@ function App() {
       <div clasname='APP'>
         <ChakraProvider theme={theme}>
         <Nav/>
-          {/* <div id="model">
+          <div id="model">
             <Container maxWidth="2xl" centerContent>
               <div id='goHere'>
               <Model></Model>
               </div>  
             </Container>
-          </div> */}
+          </div>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="Home" element={<Home/>}/>

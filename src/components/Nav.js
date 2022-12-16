@@ -75,9 +75,9 @@ const Navbar = props => {
           <LinkItem children="Projects" path={path}>
             Projects
           </LinkItem>
-          <LinkItem children="Blog" path={path}>
+          {/* <LinkItem children="Blog" path={path}>
             Posts
-          </LinkItem>
+          </LinkItem> */}
         </Stack>
 
         <Box flex={1} align="right" position="relative">
