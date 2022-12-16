@@ -13,7 +13,7 @@ const Projects = () => {
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <WorkGridItem id="persona" title="User Persona" thumbnail={process.env.PUBLIC_URL + "/ProjectsThumbs/persona_thumb.png"}>
-            Constructed 3 user persona and sketch for the card reader @ Brown
+            Constructed 2 user persona and a sketch for the card reader @ Brown
           </WorkGridItem>
         </Section>
         
