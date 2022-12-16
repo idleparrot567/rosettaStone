@@ -91,12 +91,9 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                {/* <Link as={reLink} to='Home'style={{ textDecoration: 'none' }}> */}
                 <MenuItem as={reLink} to='Home'style={{ textDecoration: 'none' }}>About</MenuItem>
-                {/* </Link> */}
-                {/* <Link as={reLink} to='Projects'style={{ textDecoration: 'none' }}> */}
                 <MenuItem as={reLink} to='Projects'style={{ textDecoration: 'none' }}>Projects</MenuItem>
-                {/* </Link> */}
+                <MenuItem as={reLink} to='Blog'style={{ textDecoration: 'none' }}>Blog</MenuItem>
               </MenuList>
             </Menu>
           </Box>
