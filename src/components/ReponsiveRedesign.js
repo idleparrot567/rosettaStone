@@ -37,9 +37,9 @@ const ResponsiveRedesign = () => {
       <Section delay={0.1}>
       <Heading as='h3' variant='section-title'>Context</Heading>
       <Paragraph>
-      As a animal lover, I noticed that a lot of local animal breeders try to present their works on the internet.
-      However, these businesses are usually lack of the resources and means to create website that has clean layout and clearly present their 
-      objective. For this project, I decide to redesign a webpage of a local rabbit breeder {' '}
+      As an animal lover, I noticed that a lot of local animal breeders try to present their works on the internet.
+      However, these businesses are usually lack of the resources and means to create websites that have clean layout and clearly present their 
+      objective. For this project, I decided to redesign a webpage of a local rabbit breeder {' '}
       <Link href='http://fitzgeraldfamilyrabbitry.weebly.com/our-bunnies.html' isExternal>
       Fitzgerald Family Rabbitry<ExternalLinkIcon mx='2px' />
     </Link> to make it responsive using HTML and CSS. 
@@ -66,7 +66,7 @@ const ResponsiveRedesign = () => {
       <Section delay={0.2}>
       <Heading as='h3' variant='section-title'>Process</Heading>
       <Paragraph>
-        After looking at the Fitzgeral's current webpage, I decide to pursue redesigining the webpage
+        After looking at the Fitzgeral's current web page, I decide to pursue redesigining the web page
         by following the plan below:
       </Paragraph>
       <TableContainer>
@@ -102,7 +102,7 @@ const ResponsiveRedesign = () => {
         Following the {' '}
         <Link href="https://www.nngroup.com/articles/ten-usability-heuristics/#:~:text=Jakob's%20Law%20states%20that%20people,them%20to%20learn%20something%20new.">
         Jakob Nielsen's 10 general principles for interaction design
-        </Link>, I identify some hierarchy, efficiency, and unintelligable elements. 
+        </Link>, I identified some hierarchy and efficiency problems, and took note of several unintelligable elements. 
       </Paragraph>
       <List ml={4} my={4}>
         <ListItem>
@@ -113,9 +113,9 @@ const ResponsiveRedesign = () => {
          <Meta>Note</Meta>
          <span> 
             The Heuristic method posed by Jakob Nielsen is a very 
-            powerful tool in identifying UI problem in an interface!
+            powerful tool in identifying UI problem in an interface.
             According to experiments, using the method greatly increases
-            the number of problem a person can detect from an interface. 
+            the number of problems a person can detect from an interface. 
          </span>
         </ListItem>
       </List>
@@ -125,14 +125,14 @@ const ResponsiveRedesign = () => {
       <Section delay={0.4}>
       <Heading as='h3' variant='section-title'>Low-fidelity Wireframes</Heading>
       <Paragraph> After identifying the design problem in Fitzgerald's initial webpage, 
-        I proceed in developing a low-fi prototype for my responsive webpage using Balsamiq. </Paragraph>
+        I proceed to develop a Low-fi prototype for my responsive webpage using Balsamiq. </Paragraph>
         <List ml={4} my={4}>
         <ListItem>
           <Meta>Tip</Meta>
          <span> 
             Low-fi prototype serves as the foundation for more detailed
-            design such as High-fi. Thus it is ok to squeeze as much helpful
-            information as possible in this prototype.
+            design such as High-fi prototype. Thus it is ok to squeeze as much helpful
+            information as possible into this prototype.
          </span>
         </ListItem>
       </List>
@@ -142,7 +142,7 @@ const ResponsiveRedesign = () => {
       <Section delay={0.5}>
       <Heading as='h3' variant='section-title'>High-fidelity Wireframes</Heading>
       <Paragraph>
-      I added fidelity to wireframes with imagery and colors/textures sampled from the Low-fi prototype developed. Throughout the process, I kept reviewing concepts, and continued to iterate until pages felt right. 
+      I added fidelity to wireframes with imagery and colors/textures sampled from the Low-fi prototype. Throughout the process, I kept reviewing concepts, and continued to iterate until pages felt right. 
       </Paragraph>
       <List ml={4} my={4}>
         <ListItem>
@@ -166,7 +166,7 @@ const ResponsiveRedesign = () => {
           <Meta>SideNote</Meta>
          <span> 
             The Tablet Prototype is my favorite one since it combines the navbar 
-            of the phone and the layout of the PC prototype. 
+            of the phone prototype and the layout of the PC prototype. 
          </span>
         </ListItem>
       </List>
@@ -184,8 +184,8 @@ const ResponsiveRedesign = () => {
           <Meta>SideNote</Meta>
          <span> 
             I created PC prototype the earliest. This design has received some criticism 
-            regarding its flow, but the juxtaposed cards on the screen in my opinion makes the design
-            more personal rather than professional, which is what a family rabbitry strives for. 
+            regarding its flow, but the juxtaposed cards on the screen, in my opinion, make the design
+            more personal, which is what a family rabbitry looks for. 
          </span>
         </ListItem>
       </List>
@@ -211,7 +211,7 @@ const ResponsiveRedesign = () => {
           <Meta>Note</Meta>
          <span> 
            Visual Style Guide is an important part of the final portfolio. Just 
-           like a manual, it assist the user in understanding the designer's
+           like a manual, it assists the user in understanding the designer's
            designing choices and principles. 
          </span>
         </ListItem>
