@@ -9,7 +9,9 @@ import { WorkGridItem } from './GridItem'
 const Projects = () => {
   return (
     <Layout title="Works">
+       
       <Container>
+      <Heading as='h3' variant='section-title'>UIUX Works</Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <WorkGridItem id="persona" title="User Persona" thumbnail={process.env.PUBLIC_URL + "/ProjectsThumbs/persona_thumb.png"}>
