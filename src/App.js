@@ -4,6 +4,7 @@ import Nav from "./components/Nav"
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import IterativeDesign from "./components/IterativeDesign.js";
+import ShoppingCart from "./components/ShoppingCart.js";
 import {Routes, Route} from 'react-router';
 import { ChakraProvider, extendTheme, Container} from '@chakra-ui/react'
 import theme from './components/Theme.js'
@@ -39,6 +40,7 @@ function App() {
           <Route path="Home" element={<Home/>}/>
           <Route path="Projects" element={<Projects/>}/>
           <Route path="IterativeDesign" element={<IterativeDesign/>}/>
+          <Route path="shoppingCart" element={<ShoppingCart/>}/>
         </Routes>
         </ChakraProvider>
     </div>

@@ -16,6 +16,7 @@ const Projects = () => {
             Constructed 3 user persona and sketch for the card reader @ Brown
           </WorkGridItem>
         </Section>
+        
         <Section>
           <WorkGridItem
             id="iterativeDesign"
@@ -28,13 +29,14 @@ const Projects = () => {
 
         <Section delay={0.1}>
           <WorkGridItem
-            id="shoopingCart"
+            id="shoppingCart"
             title="React Shopping Cart"
             thumbnail={process.env.PUBLIC_URL + "/ProjectsThumbs/shopping.png"}
           >
             A simple react app featuring a bakery shopping cart system
           </WorkGridItem>
         </Section>
+        
         <Section delay={0.1}>
           <WorkGridItem id="responsive" thumbnail={process.env.PUBLIC_URL + "/ProjectsThumbs/responsive_thumb.png"} title="Responsive Redesign">
             Implemented a HTML responsiive website for Fitzgerald Family Rabbitry
